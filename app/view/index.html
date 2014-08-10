@@ -7,14 +7,12 @@
         document.write('<base href="' + document.location + '" />');
     </script>
     <link rel="stylesheet" href="../styles/home.css"/>
-    <script data-require="jquery@*" data-semver="2.0.3" src="../../scripts/vendor/jquery/jquery.min.js"></script>
-    <script data-require="angular.js@1.0.x" src="../../scripts/vendor/angular/angular.min.js"></script>
-    <script src="../javascript/app.js"></script>
+    <script src="../vendor/require.js"  data-main="../javascript/app.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
 <h1 class="title">The Note Making App</h1>
-<notepad/>
+<notepad></notepad>>
 </body>
 
 </html>
