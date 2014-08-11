@@ -1,9 +1,9 @@
 require.config({
     baseUrl: '../../app/javascript',
- //此处为路径缩写
-//    paths: {
-//        angular: '../../scripts/vendor/angular/angular'
-//    }
+    //此处为路径缩写
+    paths: {
+        jquery: '../vendor/jquery/jquery'
+    },
     shim: {
         '../vendor/angular/angular': {
             exports: 'angular'
@@ -11,5 +11,8 @@ require.config({
     }
 });
 
-require(['pad-app', 'node-service', 'pad-directive'], function (app) {
+require([ 'pad-app', 'node-service', 'pad-directive'], function (app) {
+//    app.run(function ($rootScope, $timeout) {
+//
+//    });
 });

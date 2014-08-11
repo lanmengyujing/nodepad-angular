@@ -5,6 +5,7 @@
         </li>
     </ul>
 </div>
-<div id="editor" ng-show="editMode" class="note-area" contenteditable="true" ng-bind="noteText"></div>
+<input id="input" ng-show="editMode" class="note-area"  ng-model="noteText" placeholder="input word"></div>
+<!--<div id="editor" ng-show="editMode" class="note-area" contenteditable="true" ng-model="noteText"></div>-->
 <span><a href="#" ng-click="save()" ng-show="editMode">Back</a></span>
-<span><a href="#" ng-click="openEditor()" ng-show="!editMode">Add Note</a></span>
+<span><a href="#" ng-click="openEditor()" ng-show="!editMode" class="add-note">Add Note</a></span>
