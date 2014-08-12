@@ -13,14 +13,14 @@ notepad {
 }
 .note-area {
     height: 450px;
-    background: url("http://extremecss.com/demos/paper.jpg") center center no-repeat;
+    background: url("../image/image.jpg") center center no-repeat;
     overflow-y: scroll;
     margin-bottom: 10px;
 }
 body {
     background: #f2f2f2;
 }
-#editor {
+#editor,#input {
     padding: 10px;
     font-weight: bold;
     padding-left: 40px;

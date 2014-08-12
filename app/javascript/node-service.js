@@ -4,7 +4,6 @@ define(["pad-app"], function (app) {
             var key = 'note' + note.id;
             localStorage.setItem(key, JSON.stringify(note));
 
-            console.log(localStorage.getItem(key))
             return this.getAll();
         };
 
