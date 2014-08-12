@@ -11,8 +11,5 @@ require.config({
     }
 });
 
-require([ 'pad-app', 'node-service', 'pad-directive'], function (app) {
-//    app.run(function ($rootScope, $timeout) {
-//
-//    });
+require([ 'pad-app', 'service/node-service', 'directive/pad-directive'], function (app) {
 });

@@ -1,4 +1,4 @@
-define(["pad-app"], function (app) {
+define(["../pad-app"], function (app) {
     app.directive('notepad', ['notesFactory', 'testService', function (notesFactory, testService) {
         return {
             restrict: 'AE',

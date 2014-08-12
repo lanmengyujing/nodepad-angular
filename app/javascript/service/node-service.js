@@ -1,4 +1,4 @@
-define(["pad-app"], function (app) {
+define(["../pad-app"], function (app) {
     app.service('notesFactory', function () {
         this.storeNote = function (note) {
             var key = 'note' + note.id;
