@@ -20,12 +20,21 @@ notepad {
 body {
     background: #f2f2f2;
 }
-#editor,#input {
+#input {
     padding: 10px;
+    width: 480px;
     font-weight: bold;
     padding-left: 40px;
     font-size: 20px;
 }
+
+.select-container{
+    background: white;
+    border: 1px solid black;
+    width: 300px;
+    font-size: 17px;
+}
+
 span a {
     display: block;
     margin-top: 10px;

@@ -3,16 +3,23 @@
 <head>
     <meta charset="utf-8"/>
     <title>AngularJS nodepad</title>
-    <script>
-        document.write('<base href="' + document.location + '" />');
-    </script>
     <link rel="stylesheet" href="../styles/home.css"/>
-    <script src="../vendor/requirejs/require.js"  data-main="../javascript/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../vendor/requirejs/require.js" data-main="../javascript/app.js" type="text/javascript"
+            charset="utf-8"></script>
 </head>
 
 <body>
 <h1 class="title">The Note Making App</h1>
-<notepad></notepad>>
+<notepad></notepad>
+
+<div class="select-container" ng-controller="SelectController">
+    <pre>{{demos | json}}</pre>
+    <select ie-select-fix="options" ng-model="demos" class="select-fix"
+            ng-options="currOption.value as currOption.text for currOption in options">
+    </select>
+    <button class="btn" type="button" ng-click="changeOptions()">change options</button>
+</div>
+
 </body>
 
 </html>

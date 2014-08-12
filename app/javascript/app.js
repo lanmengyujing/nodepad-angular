@@ -11,5 +11,7 @@ require.config({
     }
 });
 
-require([ 'pad-app', 'service/node-service', 'directive/pad-directive'], function (app) {
-});
+require([ 'pad-app', 'service/node-service', 'directive/pad-directive', 'controller/select-controller',
+    'directive/ie-select-fix-directive'],
+    function (app) {
+    });
