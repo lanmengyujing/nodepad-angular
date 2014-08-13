@@ -40,7 +40,7 @@ define(["../pad-app"], function (app) {
 
                 scope.notes = notesFactory.getAll();
             },
-            templateUrl: '../view/node-template.html'
+            templateUrl: '../../node-template.html'
         };
     }]);
 });
