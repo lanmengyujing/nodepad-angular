@@ -1,5 +1,5 @@
 define(["../pad-app"], function (app) {
-    app.directive('notepad', ['notesFactory', 'testService', function (notesFactory, testService) {
+    app.directive('notepad', ['notesService', 'testService', function (notesService, testService) {
         return {
             restrict: 'AE',
             scope: {},
@@ -7,7 +7,7 @@ define(["../pad-app"], function (app) {
                 scope.openEditor = function (index) {
                     scope.editMode = true;
                     if (index !== undefined) {
-                        scope.noteText = notesFactory.get(index).content;
+                        scope.noteText = notesService.get(index).content;
                         scope.index = index;
                     } else
                         scope.noteText = undefined;
@@ -18,7 +18,7 @@ define(["../pad-app"], function (app) {
                         note.title = scope.noteText.length > 10 ? scope.noteText.substring(0, 10) + '. . .' : scope.noteText;
                         note.content = scope.noteText;
                         note.id = scope.index != -1 ? scope.index : localStorage.length;
-                        scope.notes = notesFactory.storeNote(note);
+                        scope.notes = notesService.storeNote(note);
                     }
                     scope.restore();
                 };
@@ -38,7 +38,7 @@ define(["../pad-app"], function (app) {
 
                 scope.restore();
 
-                scope.notes = notesFactory.getAll();
+                scope.notes = notesService.getAll();
             },
             templateUrl: '../../node-template.html'
         };

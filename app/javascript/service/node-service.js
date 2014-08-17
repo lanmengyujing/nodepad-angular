@@ -1,5 +1,5 @@
 define(["../pad-app"], function (app) {
-    app.service('notesFactory', function () {
+    app.service('notesService', function () {
         this.storeNote = function (note) {
             var key = 'note' + note.id;
             localStorage.setItem(key, JSON.stringify(note));
