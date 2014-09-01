@@ -8,9 +8,8 @@
   "keywords": [
     "Testable"
   ],
-  "license": "MIT",
   "homepage": "https://github.com/lanmengyujing/nodepad-angular",
-  "private": true,
+  "private": false,
   "dependencies": {
     "jquery": "~2.0.3",
     "underscore": "~1.5.2",
